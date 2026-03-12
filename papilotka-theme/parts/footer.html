@@ -1,62 +1,79 @@
-<!-- wp:group {"tagName":"footer","className":"site-footer","backgroundColor":"surface","style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--60)","bottom":"var(--wp--preset--spacing--50)","left":"var(--wp--preset--spacing--50)","right":"var(--wp--preset--spacing--50)"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-group site-footer">
+<!-- wp:group {"tagName":"footer","className":"site-footer","backgroundColor":"navy","style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--70)","bottom":"var(--wp--preset--spacing--50)","left":"var(--wp--preset--spacing--50)","right":"var(--wp--preset--spacing--50)"}}},"layout":{"type":"constrained"}} -->
+<footer class="wp-block-group site-footer has-navy-background-color has-background">
 
-	<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--50)"}},"layout":{"type":"constrained"}} -->
+	<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--60)"}}, "layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
 
+		<!-- Top row: logo + nav + CTA ───────────────────────────────── -->
 		<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","alignItems":"flex-start","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--50)"}}} -->
 		<div class="wp-block-group">
 
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--30)"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+			<!-- Logo + tagline -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--20)"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 			<div class="wp-block-group">
-				<!-- wp:site-logo {"width":140,"shouldSyncIcon":false} /-->
-				<!-- wp:site-tagline {"style":{"color":{"text":"var(--wp--preset--color--muted)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"}}} /-->
+				<!-- wp:site-logo {"width":130,"shouldSyncIcon":false} /-->
+				<!-- wp:paragraph {"style":{"color":{"text":"rgba(255,255,255,0.5)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"}}} -->
+				<p style="color:rgba(255,255,255,0.5);font-size:var(--wp--preset--font-size--sm)">Dom produkcyjny · Filmy reklamowe · Brand storytelling</p>
+				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
 
+			<!-- Quick links -->
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--20)"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 			<div class="wp-block-group">
-				<!-- wp:heading {"level":6,"content":"Usługi"} -->
-				<h6 class="wp-block-heading">Usługi</h6>
+				<!-- wp:heading {"level":6,"style":{"color":{"text":"rgba(255,255,255,0.35)"}}} -->
+				<h6 class="wp-block-heading" style="color:rgba(255,255,255,0.35)">Nawigacja</h6>
 				<!-- /wp:heading -->
-				<!-- wp:list {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--10)"},"color":{"text":"var(--wp--preset--color--muted)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"}}} -->
-				<ul class="wp-block-list" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--sm)">
-					<li><a href="/papilotka-com/filmy-reklamowe">Filmy reklamowe</a></li>
-					<li><a href="/papilotka-com/filmy">Filmy eventowe</a></li>
-					<li><a href="/papilotka-com/produkcja-filmowa-dom-produkcyjny">Produkcja filmowa</a></li>
+				<!-- wp:list {"style":{"color":{"text":"rgba(255,255,255,0.65)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"},"spacing":{"blockGap":"var(--wp--preset--spacing--10)"}}} -->
+				<ul class="wp-block-list" style="color:rgba(255,255,255,0.65);font-size:var(--wp--preset--font-size--sm)">
+					<li><a href="/papilotka-com/">Strona główna</a></li>
+					<li><a href="/papilotka-com/portfolio">Portfolio</a></li>
+					<li><a href="/papilotka-com/uslugi">Usługi</a></li>
+					<li><a href="/papilotka-com/o-nas">O nas</a></li>
+					<li><a href="/papilotka-com/kontakt">Kontakt</a></li>
 				</ul>
 				<!-- /wp:list -->
 			</div>
 			<!-- /wp:group -->
 
+			<!-- Contact -->
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--20)"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 			<div class="wp-block-group">
-				<!-- wp:heading {"level":6,"content":"Kontakt"} -->
-				<h6 class="wp-block-heading">Kontakt</h6>
+				<!-- wp:heading {"level":6,"style":{"color":{"text":"rgba(255,255,255,0.35)"}}} -->
+				<h6 class="wp-block-heading" style="color:rgba(255,255,255,0.35)">Kontakt</h6>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var(--wp--preset--color--muted)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"}}} -->
-				<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--sm)"><a href="mailto:ernicen@gmail.com">ernicen@gmail.com</a></p>
+				<!-- wp:paragraph {"style":{"color":{"text":"rgba(255,255,255,0.65)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"}}} -->
+				<p style="color:rgba(255,255,255,0.65);font-size:var(--wp--preset--font-size--sm)"><a href="mailto:kontakt@papilotka.com">kontakt@papilotka.com</a></p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var(--wp--preset--color--muted)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"}}} -->
-				<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--sm)"><a href="/papilotka-com/kontakt">Formularz kontaktowy</a></p>
+				<!-- wp:paragraph {"style":{"color":{"text":"rgba(255,255,255,0.65)"},"typography":{"fontSize":"var(--wp--preset--font-size--sm)"}}} -->
+				<p style="color:rgba(255,255,255,0.65);font-size:var(--wp--preset--font-size--sm)">Łódź, Polska</p>
 				<!-- /wp:paragraph -->
+				<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var(--wp--preset--spacing--20)"}}}} -->
+				<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--20)">
+					<!-- wp:button {"style":{"spacing":{"padding":{"top":"0.625rem","bottom":"0.625rem","left":"1.5rem","right":"1.5rem"}}}} -->
+					<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/papilotka-com/kontakt">Napisz do nas →</a></div>
+					<!-- /wp:button -->
+				</div>
+				<!-- /wp:buttons -->
 			</div>
 			<!-- /wp:group -->
 
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:separator {"backgroundColor":"surface-2","className":"is-style-wide"} -->
-		<hr class="wp-block-separator has-text-color has-surface-2-color has-surface-2-background-color has-background is-style-wide"/>
+		<!-- Divider -->
+		<!-- wp:separator {"style":{"color":{"text":"rgba(255,255,255,0.12)"},"border":{"color":"rgba(255,255,255,0.12)","width":"1px"}},"className":"is-style-wide"} -->
+		<hr class="wp-block-separator is-style-wide" style="border-color:rgba(255,255,255,0.12)"/>
 		<!-- /wp:separator -->
 
+		<!-- Bottom row: copyright -->
 		<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--20)"}}} -->
 		<div class="wp-block-group">
-			<!-- wp:paragraph {"style":{"color":{"text":"var(--wp--preset--color--muted)"},"typography":{"fontSize":"var(--wp--preset--font-size--xs)"}}} -->
-			<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--xs)">© 2024 Papilotka.com · Dom produkcyjny · Wszelkie prawa zastrzeżone.</p>
+			<!-- wp:paragraph {"style":{"color":{"text":"rgba(255,255,255,0.35)"},"typography":{"fontSize":"var(--wp--preset--font-size--xs)"}}} -->
+			<p style="color:rgba(255,255,255,0.35);font-size:var(--wp--preset--font-size--xs)">© 2024 Papilotka.com · Wszelkie prawa zastrzeżone.</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"style":{"color":{"text":"var(--wp--preset--color--muted)"},"typography":{"fontSize":"var(--wp--preset--font-size--xs)"}}} -->
-			<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--xs)">Filmy reklamowe · Fotografia biznesowa · Filmy eventowe · Produkcja filmowa</p>
+			<!-- wp:paragraph {"style":{"color":{"text":"rgba(255,255,255,0.35)"},"typography":{"fontSize":"var(--wp--preset--font-size--xs)"}}} -->
+			<p style="color:rgba(255,255,255,0.35);font-size:var(--wp--preset--font-size--xs)">Filmy reklamowe · Fotografia biznesowa · Filmy eventowe</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

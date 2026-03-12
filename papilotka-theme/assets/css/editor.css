@@ -1,35 +1,32 @@
-/* Editor overrides — keeps the visual appearance consistent with the front end */
+/* Editor overrides — keeps visual appearance consistent with the front end */
 
 .editor-styles-wrapper {
-	background-color: #0d0d0d;
-	color: #f0ede6;
+	background-color: #0a0a0a;
+	color: #ffffff;
 }
 
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
 .editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6,
 .editor-styles-wrapper .wp-block-post-title {
-	font-family: 'Playfair Display', Georgia, serif;
+	font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Ghost button style */
 .wp-block-button.is-style-ghost .wp-block-button__link {
 	background: transparent;
-	color: var(--wp--preset--color--contrast);
-	border: 1px solid currentColor;
+	color: #ffffff;
+	border: 1.5px solid rgba(255, 255, 255, 0.4);
+	border-radius: 24px;
 }
 
 .wp-block-button.is-style-ghost .wp-block-button__link:hover {
-	background: var(--wp--preset--color--accent);
-	border-color: var(--wp--preset--color--accent);
-	color: var(--wp--preset--color--base);
-}
-
-/* Cinematic section style */
-.wp-block-group.is-style-cinematic {
-	background-color: var(--wp--preset--color--surface);
-	padding-top: var(--wp--preset--spacing--70);
-	padding-bottom: var(--wp--preset--spacing--70);
+	background: #FF3C00;
+	border-color: #FF3C00;
+	color: #ffffff;
 }
 
 /* Scroll-reveal utility */
@@ -46,9 +43,11 @@
 
 /* Header scroll state */
 .site-header {
-	transition: box-shadow 0.3s ease, background-color 0.3s ease;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	transition: box-shadow 0.3s ease;
 }
 
 .site-header.is-scrolled {
-	box-shadow: 0 1px 32px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 1px 40px rgba(0, 0, 0, 0.7);
 }
