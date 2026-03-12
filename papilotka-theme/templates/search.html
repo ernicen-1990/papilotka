@@ -1,0 +1,53 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","theme":"papilotka"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+
+	<!-- Search header ─────────────────────────────────────────────── -->
+	<!-- wp:group {"align":"full","backgroundColor":"surface","style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--70)","bottom":"var(--wp--preset--spacing--60)","left":"var(--wp--preset--spacing--50)","right":"var(--wp--preset--spacing--50)"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50)">
+		<!-- wp:query-title {"type":"search"} /-->
+		<!-- wp:search {"label":"Szukaj ponownie","showLabel":false,"placeholder":"Szukaj...","buttonText":"Szukaj","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"spacing":{"margin":{"top":"var(--wp--preset--spacing--40)"}}}} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- Results ───────────────────────────────────────────────────── -->
+	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--60)","bottom":"var(--wp--preset--spacing--70)","left":"var(--wp--preset--spacing--50)","right":"var(--wp--preset--spacing--50)"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50)">
+
+		<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"relevance","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"default"}} -->
+		<div class="wp-block-query">
+
+			<!-- wp:post-template {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--50)"}}} -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--20)","padding":{"bottom":"var(--wp--preset--spacing--50)"}},"border":{"bottom":{"color":"var(--wp--preset--color--surface-2)","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<div class="wp-block-group">
+					<!-- wp:post-terms {"term":"category"} /-->
+					<!-- wp:post-title {"isLink":true,"level":3} /-->
+					<!-- wp:post-excerpt {"moreText":"Czytaj dalej →","showMoreOnNewLine":false} /-->
+					<!-- wp:post-date /-->
+				</div>
+				<!-- /wp:group -->
+			<!-- /wp:post-template -->
+
+			<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"style":{"color":{"text":"var(--wp--preset--color--muted)"}}} -->
+			<p style="color:var(--wp--preset--color--muted)">Brak wyników wyszukiwania. Spróbuj innego słowa kluczowego.</p>
+			<!-- /wp:paragraph -->
+			<!-- /wp:query-no-results -->
+
+			<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"},"style":{"spacing":{"margin":{"top":"var(--wp--preset--spacing--60)"}}}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+			<!-- /wp:query-pagination -->
+
+		</div>
+		<!-- /wp:query -->
+
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","theme":"papilotka"} /-->
